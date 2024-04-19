@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="images/favicon.png" rel="icon"/>
+    <title>Documentation | News App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css"/>
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<!-- <div class="preloader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div> -->
+<!-- Preloader End -->
+
+<!-- Document Wrapper
+    =============================== -->
+<div id="main-wrapper">
+
+    <!-- Header
+        ============================ -->
+    <header id="header" class="sticky-top">
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg bg-light navbar-dropdown-dark">
+            <div class="container-fluid">
+                <!-- Sidebar Toggler -->
+                <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none"
+                        type="button"><span></span><span class="w-75"></span><span></span></button>
+                <!-- Logo -->
+                <img src="images/logo.png" width="200" alt="logo"/>
+                <!-- Logo End -->
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Content
+        ============================ -->
+    <div id="content" role="main">
+
+        <!-- Sidebar Navigation
+            ============================ -->
+        <div class="idocs-navigation bg-light">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="#introduction"
+                                        class="nav-link active">Introduction</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#admin_panel">News App Admin
+                    Panel</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#installation">Configure on
+                            your server</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#notification-management">Notification
+                            Management</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#system-configurations">Set
+                            System
+                            Configurations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#location-wise-news">Set
+                            location wise
+                            News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#language">Set Language</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#featured-section">Featured
+                            Section</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pp">Set Privacy Policy</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#tc">Set Terms Conditions</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#other_pages">Set Other
+                            Pages</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ad_spaces">Set Ad Spaces</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#addManage_roles">Add &
+                            Assign Roles to
+                            Users</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#survey">Set Survey
+                            Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#forgot_password">Forgot
+                            Password for
+                            Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#update_system">Update
+                            System</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#news_app" class="nav-link">News App</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#setup">How to setup
+                            Flutter</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#appname'>How to change the
+                            app name?</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href='#applogo'>How to change app
+                            logo?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#appcolor'>How to change App
+                            color?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#packagename'>How to change
+                            package name?</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#assetimage">How to change
+                            images in
+                            asset?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#font">How to change app
+                            font?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#serverurl'>How to change
+                            Server URL of application?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#settings'>System Settings
+                            for
+                            Application?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#yrcountrycode'>How to change
+                            your initial
+                            country code?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#create_fcm'>How to create
+                            Firebase Project
+                            for Android and iOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#email_fcm'>Authenticate with
+                            Firebase Using
+                            Email and Password</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#google_fcm'>Authenticate
+                            with Firebase Using
+                            Google Sign-In</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#fb_fcm'>Authenticate with
+                            Firebase Using
+                            Facebook Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#phone_fcm'>Authenticate with
+                            Firebase Using
+                            Phone(OTP)</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#apple_fcm'>Authenticate with
+                            Firebase Using
+                            Apple Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#link'>How to Create Dynamic
+                            Link Using
+                            Firebase</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#fcm'>How to Integrate
+                            Firebase Cloud
+                            Messaging in App?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#admob'>How to use admob in
+                            App?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#fbAd'>How to use facebook
+                            Ads in App?</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href='#unityAd'>How to use unity
+                            Ads in App?</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href='#adsInterval'>How to
+                            Enable/Disable Weather
+                            Data for HomeScreen, Enable/Disable Facebook login, Interval for Survey
+                            Questions &
+                            Interval for Ads types?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#limit'>How to Increase
+                            Product Load
+                            Limit?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#api'>How to Change APi
+                            parameter?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#change_lang'>How to Change
+                            Language?</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href='#apk'>How to Generate Release
+                            APK?</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#apk-iOS'>How to Publish iOS
+                            App to App
+                            Store</a></li>
+                        <li class="nav-item"><a class="nav-link" href='#playstore_datasafety'>How to
+                            Solve Data
+                            safety issue in Playstore?</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#news_web_app" class="nav-link">News Web</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToSetupWebVersion">How to setup Web
+                                Version</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#WhereToSetDomainURL">Where to Set API URL</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                                <a class="nav-link" href="#WhereToSetWebURL">Where to Set Web URL</a>
+                            </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToIntegrateFirebase">Integrate Firebase
+                                with Web App</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToChangeAppName">How to change application
+                                name</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToSetFaviconIcon">How to change Favicon
+                                Icon</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToSetColorCodeLoader">How to change color
+                                code loader</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToWebSettings">How to Set Logo, Theme
+                                Color etc</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howTochangeFooterArea">How to Change Footer
+                                Social Media
+                                Links</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howTosetSitemap">How to Setup Sitemap</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howTochangeFonts">How to Change Fonts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToAddAdSense">How to Add Google
+                                AdSense</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToRunWebProject">How to run Web
+                                project</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToGenerateReleaseApk">How to deploy the
+                                Site</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#SeoForWeb">SEO For Web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nextjsdeploy">Next Js Deploayment</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
+                <li class="nav-item"><a href="#rating" class="nav-link">Your Feedback</a></li>
+                <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
+
+                <li class="nav-item"><a href="#news_laravel" class="nav-link">News Admin Panel
+                    (Laravel)</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#backup_project">Backup Of
+                            your project</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#backup_database">Backup Of
+                            your Database</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#install_news_laravel">Install
+                            News Laravel
+                            Admin panel</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- Docs Content  -->
+        <div class="idocs-content">
+            <div class="container">
+
+                <!-- Getting Started -->
+                <section id="introduction">
+                    <h3>Introduction</h3>
+                    <p class="">Thank you for purchasing code. It really means a lot and It's our
+                        pleasure to serve
+                        top-notch service to you. Thank you so much for choosing<a
+                                href="https://wrteam.in/"
+                                style='color:#3c55d1' target="_blank"> WRTeam </a>. If you have
+                        trouble with the code
+                        and documentation please contact to our Support Team <a href="#support"
+                                                                                style="color:#3c55d1">Here</a>
+                    </p>
+                </section>
+
+                <hr class="divider">
+                <h4>Where to find purchase code</h4>
+                <p class=""> If you have
+                    trouble to find your purchase code <a
+                            href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code"
+                            style="color:#3c55d1">Here</a>
+                </p>
+
+                <hr class="divider">
+
+                <section id="admin_panel">
+                    <h3>News App Admin Panel</h3>
+
+                    <section id="installation">
+                        <h4>Requirements</h4>
+                        <p>PHP Version >= 7.3</p>
+                        <h4>How to Install News App on Your shared hosting?</h4>
+                        <ol>
+                            <li>Create your domain or subdomain in your shared hosting</li>
+                            <li>Create an empty database in your shared hosting and remember this
+                                credentials:
+                                <br/><span>i. database name</span>
+                                <br/><span>ii. database username</span>
+                                <br/><span>iii. database password</span>
+                            </li>
+                            <li>Upload the source code you have downloaded from CodeCanyon and unzip
+                                it.
+                            </li>
+                            <li>Now navigate to the url where your project is located.<br/>
+                                ex. mydomain.com or subdomain.mydomain.com
+                            </li>
+                            <li>The installation screen should appear and guide you in the
+                                process.
+                            </li>
+                        </ol>
+                        <p>Thats it! Now you are ready to run your first News App : <b>https://news.wrteam.me</b>
+                        </p>
+                        <b>Default Login Details</b><br>
+                        User: admin<br>
+                        Pass: admin123<br><br>
+                        <hr>
+                    </section>
+
+                    <section id="notification-management">
+                        <h4>Notification Management</h4>
+                        <p>First Of all,we need to set the FCM server key from <a
+                                href="https://console.firebase.google.com" target="_blank">Firebase
+                            console</a></p>
+                        <img src="images/news_laravel/notification-setting.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="system-configurations">
+                        <h4>Set System Configurations</h4>
+                        <p>Change the System Timezone, App Name & App Logo of News admin
+                            panel. And also
+                            Enable / Disable Category, Subcategory, Breaking News, Live Streaming
+                            Comments.</p>
+                        <a href="images/news_laravel/system-configurations.png" target="_blank"><img
+                                src="images/news_laravel/system-configurations.png"
+                                alt='System Configurations'
+                                title='System Configurations'></a>
+                        <hr>
+                    </section>
+
+                    <section id="location-wise-news">
+
+
+                        <h4>Location Wise News</h4>
+                        <p>Enable location from app settings and add Nearest Location Measure(in
+                            KM).</p>
+                        <p>If location setting is enabled in app setting then only those news are
+                            appears in app and web which are falls in that radius which is set in
+                            Nearest location measure (in KM).</p>
+                        <a href="images/panel/location_enable.png" target="_blank"><img
+                                src="images/panel/location_enable.png" alt='System Configurations'
+                                title='Location Enable'></a>
+
+                        <p>Add Location with Latitude & Longitude.</p>
+                        <a href="images/news_laravel/location.png" target="_blank"><img
+                                src="images/news_laravel/location.png" alt='System Configurations'
+                                title='Location Wise News'></a>
+                        <p>Assign location to news</p>
+                        <a href="images/news_laravel/assign-news.png" target="_blank"><img
+                                src="images/news_laravel/assign-news.png"
+                                alt='System Configurations'
+                                title='Assign location to news'></a>
+                        If you want location data, you can upload location.csv in csv folder. Go to
+                        database->tbl_location->import & import location.csv file.
+                        <a href="images/panel/location-import1.png" target="_blank"><img
+                                src="images/panel/location-import1.png" alt='System Configurations'
+                                title='Location Import'></a>
+                        <a href="images/panel/location-import2.png" target="_blank"><img
+                                src="images/panel/location-import2.png" alt='System Configurations'
+                                title='Location Import'></a>
+                        <hr>
+                    </section>
+
+                    <section id="language">
+                        <h4>Set Language</h4>
+                        <p>Set Language for your website and app.</p>
+                        <img src="images/news_laravel/language_dynamic.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="featured-section">
+                        <h4>Featured Section</h4>
+                        <p>Set featured section for all active languages.
+                        <p style="color: red;">If you haven't set a featured section for a
+                            particular language, the
+                            frontend will have a blank homepage(app+web).</p>
+                        </p>
+                        <img src="images/news_laravel/featured_sections.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="pp">
+                        <h4>Set Privacy Policy</h4>
+                        <p>Set Privacy Policy for your website and app. Privacy Policy url will be -
+                            your admin
+                            panel url/play_store_privacy_policy (For ex.
+                            https://news.wrteam.me/play_store_privacy_policy)
+                        <p style="color: red;">It is Compulsory to add Privacy Policy for App.</p>
+                        (Create different
+                        page for your different activated language)</p>
+                        <img src="images/news_laravel/pp.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="tc">
+                        <h4>Set Terms Conditions</h4>
+                        <p>Set Terms Conditions for your website and app.
+                        <p style="color: red;">It is Compulsory to add Terms Conditions for App.</p>
+                        (Create
+                        different page for your different activated language)</p>
+                        <img src="images/news_laravel/tc.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="other_pages">
+                        <h4>Other Pages</h4>
+                        <p>Set and manage your content for app. (Create different page for your
+                            different activated
+                            language)</p>
+                        <p>NOTE: You need to Set title in your desired Language here only, as it is
+                            not translated
+                            from App.</p>
+                        <img src="images/news_laravel/pages.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="ad_spaces">
+                        <h4>Ad Spaces</h4>
+                        <p>Set and manage your ad for app. (Create different Ads for your different
+                            activated
+                            language)</p>
+                        <img src="images/news_laravel/ad_spaces.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="addManage_roles">
+                        <h4>Add & Assign Roles to Users</h4>
+                        <p>Add user Roles & Assign to Specific User from User List Tab, to Enable
+                            Create & Manage
+                            News options in App [You will find Create News & Manage News in Profile
+                            Settings screen
+                            in App].</p>
+                        <img src="images/news_laravel/AddRoles.png"/>
+                        <img src="images/news_laravel/assignRoles.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="survey">
+                        <h4>Survey Questions</h4>
+                        <p>Create and manage Survey Questions for app.</p>
+                        <p>These Survey Question & Answers visible in App In between @ Category >
+                            List Of All /
+                            Subcategory Wise News.</p>
+                        <img src="images/news_laravel/survey_questions.png"/>
+                        <hr>
+                    </section>
+
+                    <section id="forgot_password">
+                        <h4>Forgot Password for Admin</h4>
+                        <p>Please add the Email SMTP details in the Settings/System Configurations
+                            to enable
+                            password reset functionality in case the admin forgets their
+                            password.</p>
+                        <img src="images/news_laravel/forgot_password.png"/>
+
+                        <hr>
+                    </section>
+
+                    <section id="update_system">
+                        <h4>Update System</h4>
+                        <p>Update system with latest version by uploading zip file.</p>
+                        <img src="images/news_laravel/update_system.png"/>
+                        <p>browse zip files from <b>Update</b> folder of Source code provided.</p>
+                        <p>NOTE: update version sequence wise. i.e. 3.0.5 to 3.0.6 & then 3.0.6 to
+                            3.0.7, not direct
+                            update from 3.0.5 to 3.0.7</p>
+                        <img src="images/news_laravel/select_zip.png"/>
+                        <hr>
+                    </section>
+
+                </section>
+                <hr class="divider">
+
+                <section id="news_app">
+                    <h3>News App</h3>
+
+                    <section id="setup">
+                        <h4>How to Setup Flutter in Android Studio</h4>
+                        <ul>
+                            <li>Download Lastest Flutter SDK from <a
+                                    href="https://docs.flutter.dev/get-started/install">Here</a>
+                            </li>
+                            <li>Extract the zip file and copy flutter Folder into your desired
+                                installation location
+                                for the Flutter SDK (eg. C:\src\flutter; do not install Flutter in a
+                                directory like
+                                C:\Program Files\).
+                            </li>
+                            <li>Inside Flutter Folder find flutter_console.bat. Start it by
+                                double-clicking.
+                                <img src="images/app/setup2.png" alt="Flutter UI Component"/>
+                            </li>
+                            <li>Now set your enviournment variable.</li>
+                            <li>From the Start search bar in , type ‘env’ and select Edit
+                                environment variables for
+                                your account.
+                                <img src="images/app/path.png" alt="Flutter UI Component"/>
+                            </li>
+                            <li>Under User variables check if there is an entry called Path:</li>
+                            <li>Click on Edit.new Dialog open from it click on new and copy full
+                                path to flutter\bin
+                                as its value.
+                            </li>
+                            <li>Now Restart your pc for changes to take effect.
+                                <img src="images/app/path2.png" alt="Flutter UI Component"/>
+                            </li>
+                            <li>Now check everything is ok or not.</li>
+                            <li>Open cmd and do following shown in below picture.
+                                <img src="images/app/check.png" alt="Flutter UI Component"/>
+                            </li>
+                            <li>Now open Android Studio and create new flutter project then select
+                                your flutter sdk
+                                file to the location where we have downloaded earlier and that's it.
+                                <img src="images/app/flutter.png" alt="Flutter UI Component"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="appname">
+                        <h4>How to change App Name?</h4>
+                        <ul>
+                            <li>Open lib > utils > Constant.dart and change that string as shown as
+                                below image
+                                <img src="images/app/appname.png" alt="news"/>
+                            </li>
+                            <li>For Android, to change label that is shown below android app icon,
+                                open android >
+                                app > src > main > open AndroidManifest.xml and inside that label
+                                change that string
+                                as shown in below image
+                                <img src="images/app/appname1.png" alt="news"/>
+                            <li>For iOS, to change label that is shown below ios app icon, open ios
+                                > Runner >
+                                Info.plist inside that <b>CFBundleDisplayName</b> &
+                                <b>CFBundleName</b> change that
+                                string as shown in below image
+                                <img src="images/app/appname2.png" alt="news"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+
+                    <section id="applogo">
+                        <h4>How to change app logo?</h4>
+                        <ul>
+                            <li>For Android, open android > app > src > main > res > mipmap add here
+                                your logo
+                                according to device screen size.
+                                <img src="images/app/logo_1.png" alt="news"/>
+                            </li>
+                            <li>For iOS, open ios > Runner > Assets.xcassets > AppIcon.appiconset
+                                here you need to
+                                put your logo according to different size.
+                                <img src="images/app/logo_2.png" alt="news"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="appcolor">
+                        <h4>How to Change App color</h4>
+                        <ul>
+                            <li>To change App color, your need to add your color code in lib > ui >
+                                styles >
+                                colors.dart
+                            </li>
+                            <li>In flutter color code start from 0xff so you have to add your hex
+                                color after
+                                <b>0xff</b>.your can change primary,second,fontcolor as shown in
+                                below image.
+                            </li>
+                            <img src="images/app/appcolor.png" alt="news"/>
+                            <li>And set that colors in appTheme.dart file there according to Light
+                                And Dark Theme
+                                for your App
+                            </li>
+                            <img src="images/app/appThemecolor.png" alt="news"/>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="packagename">
+                        <h4>How to change package name</h4>
+                        <ul>
+                            <li>In the Android pane, click on the little gear icon. Go with Tree
+                                Appearance & then
+                                Uncheck/Deselect the Compact Middle Packages option.
+                                <img src="images/app/packagename_1.png" alt="news"/>
+                            </li>
+                            <li>Your package directory will now be broken up in individual
+                                directories.
+                                <img src="images/app/packagename_2.png" alt="news"/>
+                            </li>
+                            <li>Individually select each directory you want to rename, and:
+                                Right-click it Select
+                                Refactor Click on Rename current In the Pop-up dialog.
+                                <img src="images/app/packagename_3.png" alt="news"/>
+                            </li>
+                            <li>Enter the new name and hit Refactor.Allow a minute to let Android
+                                Studio update all
+                                changes.
+                                <img src="images/app/packagename_4.png" alt="news"/>
+                            </li>
+                            <li>Now press ctrl + shift + R and replace old packagename with your new
+                                packagename.
+                                <img src="images/app/packagename_5.png" alt="news"/>
+                            </li>
+                            <img src="images/app/packagename_7.png" alt="news"/>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="assetimage">
+                        <h4>How to Change Images in App</h4>
+                        <ul>
+                            <li>Go to <b>assets</b> > <b>images</b> Folder. Here you have to change
+                                all image for
+                                your App images according to different Folder different dimension
+                                images used &
+                                mention other folders of images in <b>pubspec.yaml</b> file as shown
+                                below.
+                                <img src="images/app/img.png" alt="news"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="font">
+                        <h4>How to Change App Font</h4>
+                        <ul>
+                            <li>Go to <b>assets</b> > <b>font</b> Folder. Here you have to copy your
+                                font. Now go to
+                                <b>pubspec.yaml</b> in fonts section change your font name as shown
+                                in below image.
+                                <img src="images/app/font.png" alt="news"/>
+                            </li>
+                            <li>Go to <b>lib</b> > <b>ui</b> > <b>styles</b> File. Change your font
+                                name here for
+                                both Themes Light & Dark.
+                                <img src="images/app/font-theme.png" alt="news"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="serverurl">
+                        <h4>How to change Server URL</h4>
+                        <ul>
+                            <li>Go to lib > utils > constant.dart. Here you have to change your
+                                admin panel URL (baseUrl).
+                            </li>
+                            <li>
+                                <img src="images/app/serverurl.png" alt="news"/>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="settings">
+                        <h4>System Settings for Application</h4>
+                        <ul>
+                            <li>First login to admin panel.</li>
+                            <li>Settings > System Configuration.</li>
+                            <li>Category Mode: Enable and Disable category from admin panel when you
+                                want to show or
+                                not category in application .
+                            </li>
+                            <li>Subcategory Mode: Enable and Disable sub category from admin panel
+                                when you want to
+                                show or not sub category in application .
+                            </li>
+                            <li>Breaking News Mode: Enable and Disable breaking news from admin
+                                panel when you want
+                                to show or not breaking news in application.
+                            <li>Live Streaming News Mode: Enable and Disable live news from admin
+                                panel when you
+                                want to show or not live news in application.
+                            </li>
+                            <li>Commnents Mode: Enable and Disable comments from admin panel when
+                                you want to show
+                                or not comments in application.
+                            </li>
+                            <img src="images/app/settings1.png">
+                            <img src="images/app/settings2.png">
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="yrcountrycode">
+                        <h4>How to change your initial country code</h4>
+                        <ul>
+                            <li>Go to lib > utils > Constant.dart. here you can change your default
+                                country code.
+                                <img src="images/app/changeConCode.png" alt="news"/>
+                            </li>
+
+                        </ul>
+                    </section>
+
+                    <section id="create_fcm">
+                        <h4>How to Create Firebase project</h4>
+                        <ul>
+                            <li>Go to Firebase console.and then click on add project.</li>
+                            <li>after that below given step will come. here you have to enter your
+                                project
+                                details.Enter your project name and then press on continue.then
+                                select email and
+                                then press continue.
+                                <img src="images/app/create1.png" alt="news"/><br>
+                                <img src="images/app/create11.png" alt="news"/><br>
+                                <img src="images/app/create12.png" alt="news"/>
+                            </li>
+                            <li>after that your project is created.
+                                <img src="images/app/create2.png" alt="news"/>
+                            </li>
+                            <li>For android,now first click on android.
+                                <img src="images/app/create3.png" alt="news"/>
+                            </li>
+                            <li>after that below given screen will appear, in that you have to enter
+                                your Package
+                                Name and App Name and then click Register app.
+                                <img src="images/app/create4.png" alt="news"/>
+                            </li>
+                            <li>Now click on download google-services.json.after that add this file
+                                in android > app
+                                Folder.
+                                <img src="images/app/create7.png" alt="news"/><br/>
+                                <img src="images/app/create8.png" alt="news"/>
+                            </li>
+                            <li>now click on next next and in last step press continue to the
+                                console button.
+                            </li>
+                            <li>for ios,perform below step. now click on add app.
+                                <img src="images/app/create9.png" alt="news"/><br>
+                                <img src="images/app/create10.png" alt="news"/>
+                            </li>
+                            <li>and then click on ios button.in this same as android step will be
+                                come here you have
+                                to enter your appname.then next and on next screen download google
+                                service
+                                info.plist file.
+                                <img src="images/app/create111.png" alt="news"/><br>
+                                <img src="images/app/create112.png" alt="news"/>
+                            </li>
+                            <li>now copy the content of that file and replace in ios > Runner >
+                                GoogleService-info.plist.
+                                <img src="images/app/create113.png" alt="news"/><br>
+                            </li>
+                            <li>now press next next on firebase console and that's it your project
+                                is created on
+                                ios.
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="email_fcm">
+                        <h4>Steps to Authenticate firebase using Email and Password</h4>
+                        <ul>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Sign-in method in Authentication.</li>
+                            <li>Go to the Email/Password and in that enable to allow user to sign in
+                                using Email and
+                                Password and Email link both.
+                                <img src="images/app/email_fcm1.png" alt="news"/><br>
+                                <img src="images/app/email_fcm2.png" alt="news"/><br>
+                                after press on save button email authentication will be enabled in
+                                your app.
+                            </li>
+                            <li>Change sender name and subject for verify email and reset password.
+                                <img src="images/app/email_fcm3.png" alt="news"/><br>
+                                <img src="images/app/email_fcm4.png" alt="news"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="google_fcm">
+                        <h4>Steps to Authenticate firebase using Google </h4>
+                        <ul>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Sign-in method in Authentication.</li>
+                            <li>Go to the Google and enable the google sign_in automatically.
+                                <img src="images/app/google_fcm1.png" alt="news"/><br>
+                                <img src="images/app/google_fcm2.png" alt="news"/>
+                            </li>
+                            <li>Download & Install JDK x64 Installer from <a
+                                    href="https://www.oracle.com/in/java/technologies/downloads/">here</a>
+                                & set
+                                JAVA_HOME from <a
+                                        href="https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux">here</a>
+                                if you haven't yet.
+                            </li>
+                            <li>click on android > gradlew in right click on open In > Terminal as
+                                shown in image
+                                below.
+                                <img src="images/app/sha1.png">
+                            </li>
+                            <li>write in terminal below command and debug SHA will print copy that
+                                and add it in
+                                firebase console.
+                                <img src="images/app/sha2.png">
+                                <img src="images/app/google_fcm3.png" alt="news"/>
+                            </li>
+                            <li>after press on save button google authentication will be enabled in
+                                your app.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="fb_fcm">
+                        <h4>Authenticate Using Facebook Login on Android with Firebase.</h4>
+                        <ul>
+                            <li>first create project for your android application , go to <a
+                                    href="https://developers.facebook.com/" target="_blank">Facebook
+                                for
+                                Developers</a></li>
+                            <li> Go to Facebook Quick Start Integrate the Facebook SDK</li>
+                            <li>On the <a href="https://developers.facebook.com/" target="_blank">Facebook
+                                for
+                                Developers</a> site, get the <b>App ID</b> and an <b>App Secret</b>
+                                for your
+                                app.
+                            </li>
+                            <li> In the <a href="https://console.firebase.google.com/u/0/"
+                                           target="_blank">Firebase
+                                console</a>, open the <b>Auth</b> section. Enable Facebook Login.
+                            </li>
+                            <li>On the <b>Sign in method</b> tab, enable the <b>Facebook</b> sign-in
+                                method and
+                                specify the <b>App ID</b> and <b>App Secret</b> you got from
+                                Facebook.
+                                <img src="images/app/fb0.png">
+                            </li>
+                            <li>Then, make sure your <b>OAuth redirect URI</b> (e.g.
+                                my-app-12345.firebaseapp.com/__/auth/handler) is listed as one of
+                                your <b>OAuth
+                                    redirect URIs</b> in your Facebook app's settings page on the <a
+                                        href="https://developers.facebook.com/" target="_blank">Facebook
+                                    for
+                                    Developers</a> site in the <b>Product Setting > Facebook
+                                    Login</b> config
+                            </li>
+                            <li>Add the dependencies for Firebase Authentication and Facebook Login
+                                SDK to your
+                                app-level build.gradle file:
+                                <img src="images/app/fb1.png"><br>
+                                <b>Edit Your Resources and Manifest</b>
+                            </li>
+                            <li>Create strings for your Facebook app ID and for those needed to
+                                enable Chrome Custom
+                                Tabs. Also, add FacebookActivity to your Android manifest.
+                            </li>
+                            <li>Open android > app > src > main > res > values > strings.xml file.
+                                <img src="images/app/fb3.png">
+                            </li>
+                            <li>Open android > app > src > main > AndroidManifest.xml File.</li>
+                            <li>Add the following meta-data element, an activity for Facebook
+                                <img src="images/app/fb2.png">
+                            </li>
+                            <li>Associate Your Package Name and Default Class with Your App</li>
+
+                            <li>Provide the Development and Release Key Hashes for Your App</li>
+                            <li>To ensure the authenticity of the interactions between your app and
+                                Facebook, you
+                                need to supply us with the Android key hash for your development
+                                environment. If
+                                your app has already been published, you should add your release key
+                                hash too.
+                                <img src="images/app/fb5.png">
+                                <b>Generating a Development Key Hash</b>
+                                <ol>
+                                    <li> We will use SHA-1 key to generate hashkey for facebook
+                                        login.
+                                    </li>
+                                    <li>you can generate hash online. Here is external link for
+                                        generate key has for
+                                        facebook login.<a
+                                                href="http://tomeko.net/online_tools/hex_to_base64.php"
+                                                target="_blank">Key hash Genrate Link</a>
+                                        <img src="images/app/hash_key1.png"><br>
+                                        <img src="images/app/hash_key2.png">
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Create iOS application here.
+                                <img src="images/app/fb_ios1.png">
+                            </li>
+                            <li>Add your iOS Bundle Id as shown as below image
+                                <img src="images/app/fb_ios2.png">
+                            </li>
+                            <li> Copy code shown in below image and paste into Info.plist file.</li>
+                            <li>and after Configure your Info.plist file.
+                                <img src="images/app/fb_ios3.png"><br>
+                                <img src="images/app/fb_ios4.png"><br>
+                                and finally iOS app in facebook authentication enabled.<br>
+                            </li>
+
+                        </ul>
+                        <hr>
+                    </section>
+
+
+                    <section id="phone_fcm">
+                        <h4>How to enable Firebase Phone Authentication(OTP).</h4>
+                        <ul>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Authentication and open Sign-in method.</li>
+                            <li>Enable Phone Sign-in method and save.
+                                <img src="images/app/phone.png" alt="news"/>
+                        </ul>
+                    </section>
+
+                    <section id="apple_fcm">
+                        <h4>Steps to Authenticate firebase using Apple </h4>
+                        <ul>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Sign-in method in Authentication.</li>
+                            <li>Go to the Apple and enable apple sign in.
+                                <img src="images/app/apple1.png" alt="news"/>
+                            </li>
+                            <li>In Xcode, select the Signing & Capabilities tab, and add "Sign In
+                                With Apple" as a
+                                new Capability then select a team on the Code Signing section.
+                                <img src="images/app/apple2.png" alt="news"/>
+                            </li>
+                            <li>This will generate and configure an App ID in the "Certificates,
+                                Identifiers &
+                                Profiles" section of the Apple Developer portal.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section id="link">
+                        <h4>Steps to Create Dynamic Link</h4>
+                        <ul>
+                            <li>Open your firebase console.</li>
+                            <li>Go to Dynamic Links.
+                                <img src="images/app/link.png" alt="news"/>
+                            </li>
+                            <li>and then Create a domain or use the google provided domain and press
+                                the continue
+                                button as shown in image below.
+                                <img src="images/app/link1.png" alt="news"/><br>
+                                <img src="images/app/link2.png" alt="news"/><br>
+                                After that your domain created successfully message shown and press
+                                finish
+                                button.<br><br>
+                            </li>
+                            <li>Create new dynamic link as shown in image below.
+                                <img src="images/app/link3.png" alt="news"/>
+                            </li>
+                            <li>Then write your URL prefix into your Short URL link as shown in
+                                image below.
+                                <img src="images/app/link4.png" alt="news"/>
+                            </li>
+                            <li>Next step in set the dynamic link URL and dynamic link name as shown
+                                in image below.
+                                <img src="images/app/link5.png" alt="news"/>
+                            </li>
+                            <li>After select the iOS project into use the dynamic link as shown in
+                                image below.
+                                <img src="images/app/link6.png" alt="news"/>
+                            </li>
+                            <li>Then select your android project into use the dynamic link and
+                                choose the option if
+                                your app is not installed as shown in image below.
+                                <img src="images/app/link7.png" alt="news"/>
+                            </li>
+                            <li>And the 5th step is optional if you want to use then choose your
+                                apppropriate way or
+                                press the create button to finally create your dynamic link.
+                                <img src="images/app/link8.png" alt="news"/>
+                            </li>
+                            <li>After successful creation of Dynamic Link, specify your Dynamic link
+                                prefix & Domain
+                                name in Constant.dart File as shown below.
+                            </li>
+                            <img src="images/app/dynamicLinkConstant.png" alt="news"/>
+                            <li>Also add value of
+                                deepLinkUrlPrefix
+                                from Constant.dart (without https://) in android -> app -> main ->
+                                AndroidManifest.xml file as shown below.
+                            </li>
+                            <img src="images/app/dynamic_link.png" alt="news"/>
+                            <li>For iOS, goto Capabilities > Add Associated Domains & Add value of
+                                deepLinkUrlPrefix
+                                from Constant.dart (without https://) as shown below.
+                            </li>
+                            <img src="images/app/associateddomain_ios.png" alt="news"/>
+                            <li>Now, Add mentioned Specific URL Patterns in Allowlist there.
+                                Reference <a
+                                        href="https://support.google.com/firebase/answer/9021429">Here</a>
+                            </li>
+                            <li>Click on video below.</li>
+                            <a href="images/app/dynamiclink_allowlist.mov" target="_blank">
+                                <video width="340" height="140" autoplay>
+                                    <source src="images/app/dynamiclink_allowlist.mov">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </a>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="fcm">
+                        <h4>How to Integrate Firebase Cloud Messaging in App?</h4>
+                        <p class="text-danger"><b>Integrating Firebase Cloud Messaging</b></p>
+                        <ul>
+
+                            <li>For Firebase Cloud Messaging Notification, first you have to
+                                register your
+                                application with Firebase.
+                            </li>
+                            <li><a href='#create_fcm'>Create Firebase Project for Application.</a>
+                                If you already
+                                created firebase project then you don't have to do that again.
+                            </li>
+                            <li>Firebase dependency, service class and all nacessary class are
+                                already included in
+                                project.
+                            </li>
+                            <li>So, you dont have to do extra code here.</li>
+                            <li>Just download <b>Google-service.json</b> and replace with existing
+                                File.
+                            </li>
+                        </ul>
+                        <h4>Sending Messages from PHP Backend</h4>
+                        <ul>
+                            <li>Add <b>Firebase Server Key</b> in notification setting. Get server
+                                key from your
+                                firebase project and set in panel.
+                                <img src="images/app/notification1.png"><br/>
+                                <img src="images/app/notification.png">
+                            </li>
+
+                            <li>for iOS your need to perform below given step</li>
+                            <li>In Xcode, open the project.</li>
+                            <li>In the Project Navigator (the left-hand menu), select the project
+                                icon that
+                                represents your app.
+                            </li>
+                            <li>In the top-left corner of the right-hand pane in Xcode, select your
+                                app's target.
+                            </li>
+                            <li>Navigate to the Capabilities tab.</li>
+                            <li>Enable Push Notifications.</li>
+                            <li>Check Remote Notifications and Background Fetch from Enabling
+                                Background Modes.
+                                <img src="images/app/1.png">
+                            </li>
+                            <li>APNs (Apple's Push Notification service) currently supports two
+                                types of
+                                connections: token-based (.p8) and certificate-based (.p12).you can
+                                follow either
+                                one of them.
+                            </li>
+                        </ul>
+                        <h4>For Token-based (.p8).</h4>
+                        <ul>
+                            <li>Log in to the Apple Developer Portal.</li>
+                            <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and
+                                click the App
+                                ID associated with your app.
+                            </li>
+                            <li>On the screen for your App ID, check Capabilities > Push
+                                Notifications.
+                                <img src="images/app/2.png"><br>
+                                <img src="images/app/3.png">
+                            </li>
+                            <li>Select App ID in next page & click continue.</li>
+                            <li>And then create Development SSL Certificate & Production SSL
+                                Certificate by adding
+                                CSR certificate. follow Apple's <a
+                                        href="https://help.apple.com/developer-account/"
+                                        style="color:red">Create a certificate signing request
+                                    instructions.</a>
+                            </li>
+                            <li>Navigate to Certificates, IDs & Profiles > Keys Section and add a
+                                Universal key for
+                                Notifications,which you can use for more than one apps as well.
+                                <img src="images/app/4.png">
+                            </li>
+                            <li>Just save and Download & keep it safe, as it will be downloaded only
+                                once.
+                                <img src="images/app/5.png">
+                            </li>
+                            <li>Then go to Firebase and add this .p8 file along with Your Key ID and
+                                Team ID.
+                                <img src="images/app/6.png">
+                            </li>
+                        </ul>
+                        <h4>FOR certificate-based (.p12) :</h4>
+                        <ul>
+                            <li>Log in to the Apple Developer Portal.</li>
+                            <li>Navigate to Certificates, IDs & Profiles > Identifiers > App IDs and
+                                click the App
+                                ID associated with your app.
+                            </li>
+                            <li>On the screen for your App ID, check Capabilities > Push
+                                Notifications.
+                            </li>
+                            <li>Click Save and respond to the Modify App Capabilities dialog box
+                                that appears.
+                            </li>
+                            <li>To create the certificate, we will use to communicate with Apple
+                                when sending push
+                                notifications:
+                            </li>
+                            <li>In a new browser tab, follow Apple's <a
+                                    href="https://help.apple.com/developer-account/#/devbfa00fef7"
+                                    class="text-danger">Create a certificate signing request
+                                instructions.</a></li>
+                            <li>In the Apple Developer Portal, navigate back to your App ID.</li>
+                            <li>Click Capabilities > Push Notifications > Configure.</li>
+                            <li>Click one of the following buttons:
+                                <ul>
+                                    <li>Development SSL Certificate > Create Certificate (for
+                                        testing push
+                                        notifications while developing an iOS app).
+                                    </li>
+                                    <li>Production SSL Certificate > Create Certificate (for sending
+                                        push
+                                        notifications in production).
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Click Choose File and select the certificate signing request you
+                                created above.
+                            </li>
+                            <li>Click Continue.</li>
+                            <li>Click Download to download the certificate.</li>
+                            <li>Use this file to export a .p12 file in the next step.</li>
+                            <li>Navigate in the Apple Developer Portal to Certificates, IDs &
+                                Profiles >
+                                Provisioning Profiles.
+                            </li>
+                            <li>Click the provisioning profile you'd like to edit.</li>
+                            <li>Edit the provisioning profile as necessary, and click Save.</li>
+                            <li>Click Download, and double-click the downloaded provisioning profile
+                                to install it.
+                            </li>
+                            <li>Make sure your Xcode project is configured to use the provisioning
+                                profile as
+                                necessary.Next, export the downloaded certificate (.cer file) as a
+                                .p12 file that
+                                can be uploaded to firebase:
+                            </li>
+                            <li>On your Mac, double-click the .cer file to open it in Keychain
+                                Access.
+                            </li>
+                            <li>In Keychain Access, in the lower-left corner, select Category >
+                                Certificates.
+                            </li>
+                            <li>Select the certificate to export.</li>
+                            <li>Choose File > Export Items.</li>
+                            <li>Enter a name in the Save As field.</li>
+                            <li>Accept the default .p12 file format and click Save. Respond to the
+                                prompts, and
+                                enter a password for the file if necessary.
+                            </li>
+                            <li>Keep track of this file, since you'll upload it to firebase in a
+                                later step.
+                                <img src="images/app/7.png"><br>
+                                <img src="images/app/8.png">
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+
+                    <section id="admob">
+                        <h4>Set up admob in App</h4>
+                        <ul>
+                            <li>In the <a href="https://apps.admob.com" style="color:red">Admob
+                                console,</a> click
+                                add android app from the Apps menu.
+                                <img src="images/app/admob1.png" alt="news"/>
+                            </li>
+                            <li>Enter your app name and Enabling user metrics is not necessary to
+                                complete this
+                                codelab. However, we recommend that you do because it allows you to
+                                understand user
+                                behavior in more detail and click on ADD APP button.
+                                <img src="images/app/admob2.png" alt="news"/><br>
+                                <img src="images/app/admob1.png" alt="news"/>
+                            </li>
+                            <li>Create ad units.
+                                <img src="images/app/admob3.png" alt="news"/>
+                            </li>
+                            <li>Select Banner unit ad and enter banner unit ad name then click on
+                                Create ad Unit
+                                button.
+                                <img src="images/app/admob4.png" alt="news"/><br>
+                                <img src="images/app/admob5.png" alt="news"/>
+                            </li>
+                            <li> Then add another unit add shown in below image and Same as above
+                                create
+                                Interstitial ads and native ads.
+                                <img src="images/app/admob6.png" alt="news"/>
+                            </li>
+                            <li>Also add Google Admob ads appId as a value for
+                                <b>android:name="com.google.android.gms.ads.APPLICATION_ID"</b> in
+                                android/app/src/main/AndroidManifest.xml file.
+                            </li>
+                            <li>Add iOS App and add units in iOS app in same way.</li>
+                            <li>Also add Google Admob ads appId as a value for <b>GADApplicationIdentifier</b>
+                                in
+                                ios/Runner/info.plist File.
+                            </li>
+                            <li>Add your ad unit id in admin panel Settings -> System
+                                Configurations.
+                                <img src="images/app/admob7.png" alt="news"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="fbAd">
+                        <h4>Set up Facebook Ads in App</h4>
+                        <ul>
+                            <li><a href="https://developers.facebook.com" style="color:red">Go to
+                                Facebook for
+                                Developers</a>.
+                            </li>
+
+                            <img src="images/app/fbAd.png" alt="news"/><br>
+                            <img src="images/app/fbAd2.png" alt="news"/>
+
+                            <li>Follow below next step and add name, email address, business name
+                                and country and
+                                click on next button.
+                                <img src="images/app/fbAd3.png" alt="news"/>
+                            </li>
+                            <li>Add Property name like below image and click on next button.
+                                <img src="images/app/fbAd4.png" alt="news"/>
+                            </li>
+                            <li>Fill Android App details and click on next button shown in below
+                                image.
+                                <img src="images/app/fbAd5.png" alt="news"/>
+                            </li>
+                            <li> Add your payment account details for facebook live ads shown in
+                                App.
+                                <img src="images/app/fbAd6.png" alt="news"/>
+                            </li>
+                            <li>After that add banner,interstitial,native ads shown in below image.
+                                <img src="images/app/fbAd7.png" alt="news"/>
+                            </li>
+                            <li>Same as Add iOS app and same as add ads in iOS app.</li>
+                            <li>Copy your all Payment Id from specific all ads and paste in admin
+                                panel in settings
+                                in system configuration in System Settings for Android Facebook Ads
+                                and System
+                                Settings for IOS Facebook Ads.
+                                <img src="images/app/fbAd8.png" alt="news"/><br>
+                                <img src="images/app/fbAd9.png" alt="news"/>
+                            </li>
+                            <li>Note: Remove following mentioned line from Code When you are going
+                                to upload your
+                                app to Play Store or AppStore.
+                                <img src="images/app/fbAd10.png" alt="news"/><br>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+
+                    <section id="unityAd">
+                        <h4>Set up Unity Ads in App</h4>
+                        <ul>
+                            <li><a href="https://dashboard.unity3d.com/" style="color:red">Go to
+                                Unity Ads
+                                Dashboard</a>, Sign in & Create New Project.
+                            </li>
+
+                            <img src="images/app/unity-new-project.png" alt="news"/><br>
+                            <li>Go to Monetization > Setup Project & find Ad Units for both Android
+                                & iOS Apps
+                                <img src="images/app/unity-1.png" alt="news"/><br>
+                                <img src="images/app/unity-2.png" alt="news"/><br>
+                                <img src="images/app/unity-3.png" alt="news"/><br>
+                                OR
+                                <img src="images/app/unity-4.png" alt="news"/><br>
+                                <img src="images/app/unity-5.png" alt="news"/><br>
+                                <img src="images/app/unity-AddUnits.png" alt="news"/><br>
+                            </li>
+                            <li> Fill Ads Details for Android & iOS @Admin Panel > Settings > System
+                                Configurations.
+                                <img src="images/app/unityAdsAdminPanel.png" alt="news"/>
+                            </li>
+                            <li>You can Add Test Devices @Unity Ads Dashboard.
+                                <img src="images/app/unity-addTestDevice.png" alt="news"/>
+                            </li>
+                            <li>You can Enable Test Mode @Unity Ads Dashboard.
+                                <img src="images/app/unity-TestModeEnable.png" alt="news"/>
+                            </li>
+                            <li>For Further Unity Ads Help, Follow this <a
+                                    href="http://documentation.cloud.unity3d.com/en/articles/5337189-ad-units-benefits-and-faqs/"
+                                    style="color:blue">Link</a></li>
+                        </ul>
+                    </section>
+
+                    <section id="adsInterval">
+                        <h4>How to Enable/Disable Weather Data for HomeScreen, Enable/Disable
+                            Facebook login,
+                            Interval for Survey Questions & Interval for Ads types?</h4>
+                        <ul>
+                            <li>you may find variables @ lib > utils > Constant.dart File.</li>
+                            <li>Please check image given below.
+                                <img src="images/app/constantFile.png">
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="limit">
+                        <h4>How to Increase Product Load Limit?</h4>
+                        <ul>
+                            <li>you can change at a time when request send to server how many item
+                                will fetch at
+                                once.
+                            </li>
+                            <li>Go to lib > utils > Constant.dart File.</li>
+                            <li>Please check below given image.
+                                <img src="images/app/limit.png">
+                            </li>
+                            & It is extended for some APIs like - categoryCubit.dart,
+                            bookmarkCubit.dart,
+                            LikeAndDislikeCubit.dart, bookmarkCubit.dart, Search.dart.
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="api">
+                        <h4>Change APi Parameter</h4>
+                        <ul>
+                            <li>You can change or add api parameter from lib > utils > api.dart.
+                                Here all list of
+                                api and api paramater is listed that is used in App.
+                                <img src="images/app/api.png" alt="news"/>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="change_lang">
+                        <h4>How to change Language</h4>
+                        <ul>
+                            <li>Go to Admin Panel > Language > Add Languages with Flag, Display Name
+                                & Language JSON
+                                File
+                            </li>
+                            <li> set your default Language & it will be reflected @App side
+                                immediately.
+                            </li>
+                            <img src="images/app/lang.png">
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="apk">
+                        <h4>Generate Release APK</h4>
+                        <ul>
+                            <li>Before Generating apk, Change values at android >
+                                <b>key.properties</b> File
+                                according to your generated Release Key.
+                            </li>
+                            <li>And also change singingConfig from debug to release in android > app
+                                > build.gradle
+                                File as shown below.
+                            </li>
+                            <img src="images/app/signingConfig.png" alt="news"/>
+                            <li>In your android studio, right click on you android module of your
+                                flutter
+                                project.there is option Flutter > open Android module in Android
+                                Studio.then
+                                generate release apk from that new module.
+                                <img src="images/app/apk1.png" alt="news"/>
+                            </li>
+                            <li>and if in your android studio, flutter option is disabled, then go
+                                to file option in
+                                your android studio > open & locate your flutter project's android
+                                module and open
+                                it. now generate relase apk from that new module.
+                                <img src="images/app/apk2.png" alt="news"/><br>
+                                <img src="images/app/apk3.png" alt="news"/>
+                            </li>
+                            <li>In Build menu there is option generate signed bundle/apk.
+                                <img src="images/app/apk4.png" alt="news"/>
+                            </li>
+                            <li>For Further Help, Follow this <a
+                                    href="https://developer.android.com/studio/publish/app-signing#generate-key"
+                                    style="color:blue">Link</a></li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="apk-iOS">
+                        <h4>Steps to Publish iOS App to App Store</h4>
+                        <ul>
+                            <li>Open your Project's Runner.xcworkspace file in Xcode, and Add your
+                                Team [Your Apple
+                                Developer ID] and also Insert GoogleService-Info.plist file
+                                [Downloaded From
+                                Firebase Project] inside Folder named Runner.
+                                <img src="images/app/ios1.png" alt="news"/>
+                            </li>
+                            <li>and then Select <b>Any iOS Device (armv7,arm64)</b> as shown in
+                                image below.
+                                <img src="images/app/ios2.png" alt="news"/>
+                            </li>
+                            <li>After that Select <b>Archive</b> From Product Menu of Xcode as shown
+                                below.
+                                <img src="images/app/ios3.png" alt="news"/>
+                            </li>
+                            <li>Once Build / Archive Generated, pop up window will be shown.
+                                Validate app First, and
+                                After Successfull Validation of App, You Can Distribute App to
+                                AppStore.
+                                <img src="images/app/ios4.png" alt="news"/>
+                            </li>
+                            <li>After Successful Submission of Build File, it will be Reflected to
+                                your Apple
+                                Developer Account in which we have created app with same Bundle ID.
+                                <a href="https://codewithchris.com/submit-your-app-to-the-app-store/"
+                                   style="color:red">Click here for Detailed Help.</a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </section>
+
+                    <section id="playstore_datasafety">
+                        <h4>How to Solve Data safety issue in Playstore?</h4>
+                        <li>Find Video Solution <a
+                                href="https://www.youtube.com/watch?v=f8rjX7_QL44"
+                                style="color:blue">here</a>
+                        </li>
+                    </section>
+                    <hr>
+                </section>
+
+
+                <hr class="divider">
+                <section id="news_web_app">
+                    <ol>
+                        <h3>News Web App</h3>
+                        <span>News Web Version is built with React JS v18.2.0 so you need to setup your Local
+                                Computer First.</span>
+                        <br/>
+
+                        <section id="howToSetupWebVersion">
+                            <h4>
+                                <li>How to setup Web Version</li>
+                            </h4>
+
+                            <ol>
+                                <li>Install Node JS :</li>
+                                Visit Node JS Official website :
+                                <a href="https://nodejs.org/en/download"
+                                   target="_blank">https://nodejs.dev/en/learn/how-to-install-nodejs/</a>
+                                for full installation guide.
+
+                                <br>
+                                <br>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="WhereToSetDomainURL">
+                            <h4>
+                                <li>Where to set API URL (Admin)</li>
+                            </h4>
+                            <ol>
+                                <li>
+                                    <h6>API Url is your admin panel url which is used to fetch the
+                                        data from admin
+                                        panel</h6>
+                                    Open .env file and change the following details
+                                    <img src="images/web/adminPanelurl.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howToIntegrateFirebase">
+                            <h4>
+                                <li>How to Connect Firebase with your Web News.</li>
+                            </h4>
+
+                            <ol>
+                                <li>
+                                    First you need to create a Web project inside your Firebase
+                                    Project.<br>
+                                    For that open your firebase project in console and click on this
+                                    tiny web icon
+                                    <img src="images/web/firebase1.png" alt="news">
+                                    <br>
+                                </li>
+
+                                <li>
+                                    After clicking on Web app you will be able to see this
+                                    Screen.<br>
+                                    Add your web app name and also make sure you don't forget to
+                                    check the checkbox.
+                                    <img src="images/web/firebase2.png" alt="news">
+                                    <br>
+                                </li>
+                                <li>
+                                    Now Copy this Firebase Credentials.
+                                    <img src="images/web/firebase3.png" alt="news">
+                                    <br>
+                                </li>
+                                <li>
+                                    And paste this your Credentials in <b>.env</b> and
+                                    <b>public/firebase-messaging-sw.js</b> File.
+                                    <img src="images/web/notification.png" alt="news">
+                                    <img src="images/web/firebase4.png" alt="news">
+                                    <br>
+                                </li>
+
+                                <li>
+                                    open firebase account go to project settings -> cloud messaging
+                                    -> Web
+                                    configuration and select key and paste in .env file
+                                    <img src="images/web/webpush.png" alt="news">
+                                    <img src="images/web/webpushkey.png" alt="news">
+                                    <img src="images/web/nextjs_vapidkey.png" alt="news">
+                                    <br>
+                                </li>
+                                <li>
+                                    <h5 class="text-danger">Note : Skip this Step if you have
+                                        already copy pasted
+                                        the credentials</h5>
+                                    If you have forget to copy your firebase credentials then you
+                                    can always find
+                                    your credentials by following this steps.<br>
+
+                                    <img src="images/web/firebase-integration.png" alt="news">
+                                    <br>
+                                </li>
+                                <li>
+                                    For Login Provider open authentication -> sign in method
+                                    <img src="images/web/firebase-provider.png" alt="news">
+                                </li>
+                                <li>
+                                    Now you have to add your Web domain to your Firebase Project<br>
+                                    1. Open your Firebase Project
+                                    2. Go you Authentication/settings/Authorized Domain
+                                    3. Click on Add Domain
+                                    4. One Popup will open add your domain name without http/https
+                                    in that popup and
+                                    click submit.
+                                </li>
+                                <img src="images/web/firebase-configuration.png" alt="firebase">
+                                </li>
+                                <li>Congratulations. You have successfully connected your Web
+                                    application to your
+                                    firebase project. Now you are good to go ahead.
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howToChangeAppName">
+                            <h4>
+                                <li>How to change Web Application name</li>
+                            </h4>
+                            <ol>
+                                <li>Change application name for your Web application. Go to <code>.env
+                                    file</code>
+                                    <img src="images/web/webtitle.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howToSetFaviconIcon">
+                            <h4>
+                                <li>How to Set Favicon Icon</li>
+                            </h4>
+
+                            <ol>
+                                <p>go to public folder & add your favicon Note: file name must be
+                                    <code>favicon.ico</code></p>
+                                <p>Here you can generate favicon icon :- <a target="_blank"
+                                                                            href="https://www.favicon-generator.org/"
+                                                                            rel="nofollow">Favicon
+                                    Generator</a></p>
+                                <li>
+                                    <img src="images/web/nextjs_faviocn.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howToSetColorCodeLoader">
+                            <h4>
+                                <li>How to Set Color Code of Loader</li>
+                            </h4>
+
+                            <ol>
+                                <li>
+                                    Go to .env -> NEXT_PUBLIC_COLOR
+                                    <img src="images/web/color.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howToWebSettings">
+                            <h4>
+                                <li>How to Set Logo, Theme Color, Web Name, Footer Logo, Footer
+                                    Description etc
+                                </li>
+                            </h4>
+
+                            <ol>
+                                <li>
+                                    go to admin panel -> settings -> web settings
+                                    <img src="images/web/websettings.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howTochangeFooterArea">
+                            <h4>
+                                <li>How to Change Footer Social Media Links</li>
+                            </h4>
+                            <ol>
+                                <li>
+                                    Open <b>.env</b> file and change the following details
+                                    <img src="images/web/footer.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howTosetSitemap">
+                            <h4>
+                                <li>How to Setup Sitemap</li>
+                            </h4>
+                            <ol>
+                                <li>
+                                    add web domain or subdomain url in .env File
+                                    <img src="images/web/sitemapurl.png" alt="news">
+                                </li>
+                                <li>
+                                    generate sitemap use command :- <code>npm run dev</code>
+
+                                </li>
+                                <li>
+                                    if you want to customize the sitemap then go to
+                                    public->sitemap.xml file
+                                    <img src="images/web/sitemap.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howTochangeFonts">
+                            <h4>
+                                <li>How to Change Fonts</li>
+                            </h4>
+                            <ol>
+                                <li>
+                                    Open <a href="https://fonts.google.com/" target="_blank">google
+                                    font</a> and
+                                    select the font
+                                    <img src="images/web/google-fonts.png" alt="News"/>
+                                </li>
+                                <li>
+                                    Open <b><code>public/assets/css/style.css</code></b> file
+                                    <img src="images/web/style_css.png" alt="News"/>
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howToAddAdSense">
+                            <h4>
+                                <li>How to Add Google AdSense</li>
+                            </h4>
+                            <ol>
+                                <li>Go to <a href="https://adsense.google.com">Google AdSense</a>
+                                    and sigin your
+                                    account and Add site as per Image
+                                </li>
+                                <br/>
+                                <img src="images/web/adsense.png" alt="Elite Quiz"/>
+                                <li> click on Let's Go button</li>
+                                <img src="images/web/adsensesite.png" alt="Elite Quiz"/>
+                                <li> Copy this script code and paste to your src -> pages ->
+                                    _document.js
+                                </li>
+                                <img src="images/web/first_verify.png" alt="Elite Quiz"/>
+                                <img src="images/web/scripthtml.png" alt="Elite Quiz"/>
+                                <li>
+                                    after script add you need to run command for build folder <b>npm
+                                    run export</b>
+                                    and upload to your server. and after click on verify button in
+                                    google adsense
+
+                                    <img src="images/web/verify.png" alt="Elite Quiz"/>
+                                </li>
+                                <li>If it says “Getting ready…,” your account is still under review
+                                    and your site
+                                    will not display ads until it has been approved.
+                                </li>
+                                <img src="images/web/under_re.png" alt="Elite Quiz"/>
+                            </ol>
+
+                            <hr>
+                        </section>
+
+                        <section id="howToRunWebProject">
+                            <h4>
+                                <li>How to run this project</li>
+                            </h4>
+                            <ol>
+                                <li>
+                                    Unzip the downloaded code. After unzipping you will have News -
+                                    Web Code Folder.
+                                    <br>
+                                    Open it in Visual Studio Code.
+                                </li>
+                                <li>
+                                    Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux,
+                                    and for MacOS
+                                    <b>CMD+J</b> and execute the command --> <b>npm i --force</b>
+                                    <br>
+                                    This will take some time to download a few Packages so wait for
+                                    a few minutes.
+                                </li>
+                                <li> After <b>npm i --force</b> finishes run this command --> <b>npm
+                                    run dev</b>.
+                                    <br>
+                                    This Command will Start the development mode.Check If everything
+                                    is working fine
+                                    then your are good to go ahead.
+
+                                </li>
+                            </ol>
+                            <hr>
+                        </section>
+
+                        <section id="howToGenerateReleaseApk">
+                            <h4>
+                                <li>How to deploy the Site</li>
+                            </h4>
+                            <ol>
+                                <li>After all the changes you are ready to deploy your Web
+                                    applicaiton on Live
+                                    Server.
+                                </li>
+                                <li>
+                                    Open VS Code teminal by typing <b>CTRL+J</b> in Windows/Linux,
+                                    and for MacOS
+                                    <b>CMD+J</b> and execute the command --> <b>npm run export</b>
+                                    <br>This will take few seconds to build the live and the
+                                    optimized version of
+                                    the web application.
+                                </li>
+                                <li>
+                                    After the process completion go to public > out Folder and
+                                    upload this files on
+                                    your live server.<br/>
+                                    (only upload <b>out </b>Folder's files on server do not upload
+                                    any other file on
+                                    server)
+                                </li>
+                                <li>If you are facing any deployment related problems you can follow
+                                    the official
+                                    document : <a
+                                            href="https://nextjs.org/docs/pages/building-your-application/deploying"
+                                            target="_blank">NextJs Deployment</a></li>
+                            </ol>
+                            <hr>
+                        </section>
+
+
+                        <section id="SeoForWeb">
+                            <h4>
+                                <li>Seo for Web</li>
+                            </h4>
+                            <ol>
+                                <h4 style="color: red;">Note: If you possess a VPS server along with
+                                    some
+                                    familiarity with <a href="https://nodejs.org/docs/latest/api/">Node.js</a>,
+                                    <a
+                                            href="https://docs.npmjs.com/">npm</a>, and <a
+                                            href="https://pm2.keymetrics.io/docs/usage/quick-start/">pm2</a>,
+                                    you're
+                                    well-equipped to delve into the Advanced SEO section. Otherwise,
+                                    feel free to
+                                    skip this part and deploy your site.</h4>
+                                <li>
+                                    if you have VPS server then go to <code>.env file </code> and
+                                    make it
+                                    "true"<code>NEXT_PUBLIC_SEO="true"</code>
+                                </li>
+                                <img src="images/web/next_public_seo.png" alt="News"/>
+                            </ol>
+                            <hr>
+                        </section>
+                        <section id="nextjsdeploy">
+                            <h4>
+                                <li>Next JS Deployment</li>
+                            </h4>
+                            <ol>
+                                <!-- <li> -->
+                                <p style="color: red;">
+                                    (For SEO) Deployment of the Next JS needs a bit of knowledge
+                                    about
+                                    <code>node js, npm, pm2 </code> technologies. We have assumed
+                                    that you are using
+                                    a <code>debian </code> based OS, apt is your package manager. If
+                                    you are using
+                                    any other linux distro then apt will be replaced with the
+                                    respective package
+                                    manager of the OS
+                                </p>
+                                <!-- </li> -->
+                                <br>
+                                <h3>First zip your whole web code and upload to your server and
+                                    after unzip your web
+                                    code and open terminal in that folder and follow this
+                                    steps.</h3>
+                                <li>
+                                    First you need to install the latest node js version <br>
+                                    <b><code>sudo apt install nodejs
+                                    </code></b>
+                                </li>
+                                <li>
+                                    Check if node js is installed correctly using this command <br>
+                                    <b><code>node -v
+                                    </code></b>
+                                </li>
+                                <li>
+                                    Then you need to install required packages for your system. This
+                                    will take some
+                                    time to install. So make sure to not to close this process
+                                    <br>
+                                    <b><code>npm install --force
+                                    </code></b>
+                                </li>
+                                <li>
+                                    Now you need to install pm2
+                                    <br>
+                                    <b><code>sudo npm install -g pm2
+                                    </code></b>
+                                </li>
+                                <li>
+                                    Now Create Production optimised build using
+                                    <br>
+                                    <b><code>npm run build
+                                    </code></b>
+                                </li>
+                                <li>
+                                    now create a auto restarting process using pm2
+                                    <br>
+                                    <b><code>pm2 start "npm start" -n "news Demo Site"
+                                    </code></b>
+                                </li>
+                                <li>
+                                    Check if pm2 process is Running OK
+                                    <br>
+                                    <b><code>pm2 ls
+                                    </code></b> <br>
+                                    <p>When you run pm2 ls you will see , 2 types of output
+                                    </p>
+                                    <br>
+                                    1. Error :<br>
+                                    <img src="images/web/news_pm2_eerror.png" alt="news"/>
+                                    2. Success :<br>
+                                    <img src="images/web/news_pm2.png" alt="news"/><br>
+                                    <p>If you are getting errors in the pm2 process , then run pm2
+                                        logs and send us
+                                        the Screenshot of the error, so that we can guide you to
+                                        resolve your
+                                        issues.</p>
+                                    <p>If you want to restart your pm2 process then run pm2 restart
+                                        id // Replace id
+                                        with your process id</p>
+                                    <p>For example here id is 0 in the above screenshot -->
+                                        <b><code> pm2 restart 0</code></b></p>
+                                </li>
+                                <li>
+                                    Create Reverse Proxy for the Node JS server in your apache
+                                    server settings
+                                    (example we use vps with aapanel :- <a
+                                        href="https://www.aapanel.com/new/index.html"
+                                        target="_blank"
+                                        rel="nofollow">aapanel</a>)
+                                    <p>
+
+                                        <code>
+                                            <!-- <pre> -->
+                                            <!-- <code> -->
+                                            &lt;Location /&gt; <br>
+                                            ProxyPass http://localhost:8001/ <br>
+                                            &lt;/Location&gt;
+                                            <!-- </code> -->
+                                            <!-- </pre> -->
+                                            <br>
+                                            <img src="images/web/proxy_config.png" alt="news"/>
+                                        </code>
+                                    </p>
+                                </li>
+                                <li>
+                                    You needs a bit of knowledge about this reference link of
+                                    packages and
+                                    technologies <br>
+
+                                    <code> <b>Node js</b> :</code> <a
+                                        href="https://nodejs.org/docs/latest/api/"
+                                        target="_blank">https://nodejs.org/docs/latest/api/</a><br>
+                                    <code> <b>npm</b> :</code> <a href="https://docs.npmjs.com/"
+                                                                  target="_blank">https://docs.npmjs.com/</a><br>
+                                    <code> <b>pm2</b> :</code> <a
+                                        href="https://pm2.keymetrics.io/docs/usage/quick-start/"
+                                        target="_blank">https://pm2.keymetrics.io/docs/usage/quick-start/</a>
+                                </li>
+                            </ol>
+                        </section>
+                    </ol>
+                </section>
+                <section id="support">
+                    <h3>Support</h3>
+                    <p>Its our pleasure to serve our service and support. please contact our support
+                        team.</p>
+                    <p>Head of Customer Support : <a
+                            href="https://join.skype.com/invite/qrIHyaH38j1n"
+                            target="_blank" style="color:#3c55d1">Devanshi Gor</a></p>
+                    <p>To help our customers, we constantly be in touch with every customer if they
+                        need any
+                        assistance regarding our product.
+                        We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm
+                            IST (GMT +5.30) –
+                            We are a Team located in India – Asia.</strong></p>
+                    <p>Typically we reply our customers for all the questions and queries within 24
+                        hours of time
+                        via comments, support forum or emails.</p>
+                </section>
+                <hr class="divider">
+
+                <section id="rating">
+                    <h3>Your Feedback</h3>
+                    <p>Dear valuable customer,
+                        Thank you very much for choosing our product.
+                        It's our pleasure to serve top-notch service to you.
+                        Please give us your honest feedback that will help us to make a more strong
+                        and reliable
+                        product by click here <a
+                                href="https://codecanyon.net/item/news-flutter-news-full-app/32062835"
+                                style="color:#3c55d1" target="_blank">Rate Us</a>.
+                        Thank you very much.</p>
+                </section>
+                <hr class="divider">
+
+                <section id="contactus">
+                    <h3>Contact Us</h3>
+                    <p>WRTeam has creative and dedicated group of developers who are mastered in
+                        Apps Developments
+                        and Web Application Development with a niche in delivering quality solutions
+                        to customers
+                        across the globe.
+                        Contact us today to find out how we can help you or for freelance work.
+                    </p>
+                    <p>Visit Us : <a href="https://wrteam.in/" target="_blank">https://wrteam.in</a>
+                    </p>
+                    <p>Mail Us : support@wrteam.in</p>
+                    <p>Thank you very much.</p>
+                </section>
+                <hr class="divider">
+
+                <!-- Getting Started -->
+                <section id="news_laravel">
+                    <h3>News laravel</h3>
+                    <h4 style="color:red;">Important factor to consider before transitioning to
+                        Laravel.</h4>
+
+
+                    <div style="    border: 1px solid;
+                       
+                        margin: 0;
+                        padding: 10px;
+                        border-radius: 8px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
+
+                        <h4> Here are video tutorial for laravel fresh installation and update from
+                            codignator to laravel . </h4>
+
+
+                        <ul>
+                            <li>
+
+                                <a href="https://youtu.be/PPPXFZWSvXw" target="_blank"> Laravel
+                                    Setup in NEWS</a>
+                            </li>
+                            <li>
+
+                                <a href="https://youtu.be/ExVwpoIOpKU" target="_blank"> Transfer
+                                    from CodeIgnitor to
+                                    Laravel in NEWS</a>
+                            </li>
+                        </ul>
+                        <br>
+                    </div>
+
+
+                    <section id="backup_project">
+                        <ol>
+                            <h3>
+                                Take a backup of your project
+                            </h3>
+                            <ol>
+
+                                <img src="images/news_laravel/5.png" alt="News"/>
+
+
+                                <li>Download images folder which is located inside public folder .
+                                </li>
+                                <img src="images/news_laravel/4.png" alt="News"/>
+
+
+                                <li>Move the codigtor code into one folder and then upload laravel
+                                    code and extract
+                                    it.
+                                </li>
+                                <img src="images/news_laravel/21.png" alt="News"/>
+
+                                <img src="images/news_laravel/20.png" alt="News"/>
+
+                                <li>Upload the source code you have downloaded from CodeCanyon and
+                                    unzip it in root
+                                    folder.
+                                </li>
+                                <li>Copy all these folders from Codignator project and paste in
+                                    laravel project
+                                    folder->storage->app->public .
+                                </li>
+
+                                <img src="images/news_laravel/14.png" alt="News"/>
+
+                            </ol>
+
+                    </section>
+
+
+                    <section id="backup_database">
+                        <ol>
+                            <h3>
+                                Take a backup of your Database.
+
+                            </h3>
+                            <ul>
+                                <li>
+                                    These instructions explain how to export (back up) your entire
+                                    database.
+                                </li>
+                                <ol>
+                                    <li>
+                                        Log into phpMyAdmin.
+                                    </li>
+                                    <img src="images/news_laravel/1.png" alt="News"
+                                         style="width: 30%!important;"/>
+                                    <li>
+                                        Select the source database on the left panel.
+                                    </li>
+                                    <img src="images/news_laravel/2.png" alt="News"
+                                         style="width: 30%!important;"/>
+                                    <li>
+                                        Click on the Export tab in the top center panel.
+                                    </li>
+                                    <img src="images/news_laravel/3.png" alt="News"
+                                         style="width: 30%!important;"/>
+                                    <li>Select Quick or Custom export method.
+                                    </li>
+                                    <li>
+                                        Choose the format you'd like to save the file as from the
+                                        dropdown menu. SQL
+                                        is
+                                        most common.
+                                    </li>
+                                    <li>
+                                        Click the Go button to continue.
+                                    </li>
+                                </ol>
+
+                            </ul>
+
+
+                        </ol>
+                    </section>
+
+
+                    <section id="install_news_laravel">
+
+                        <h3>Install Laravel News Admin panel</h3>
+
+                        <ol>
+                            <li>Upload the source code you have downloaded from CodeCanyon and unzip
+                                it.
+                            </li>
+                            <li>Now navigate to the url where your project is located.<br/>
+                                ex. mydomain.com or subdomain.mydomain.com
+                            </li>
+                            <li>The installation screen should appear and guide you in the
+                                process.
+                            </li>
+
+                            <ul>
+                                <li>Step 1</li>
+                                <img src="images/news_laravel/6.png" alt="News"/>
+                                <li>Step 2</li>
+                                <img src="images/news_laravel/7.png" alt="News"/>
+                                <li>Step 3</li>
+                                <img src="images/news_laravel/8.png" alt="News"/>
+                                <li>Step 4</li>
+                                <img src="images/news_laravel/9.png" alt="News"/>
+
+                                <li>Step 5</li>
+                                <img src="images/news_laravel/10.png" alt="News"/>
+                                <img src="images/news_laravel/11.png" alt="News"/>
+                                <img src="images/news_laravel/12.png" alt="News"/>
+                                <img src="images/news_laravel/13.png" alt="News"/>
+
+                                <li>After successfull installation you will see login page.</li>
+
+                                <img src="images/news_laravel/15.png" alt="News"/>
+                                <img src="images/news_laravel/16.png" alt="News"/>
+
+
+                            </ul>
+
+                        </ol>
+                    </section>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Content end -->
+
+
+</div>
+<!-- Document Wrapper end -->
+
+<!-- Back To Top -->
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+        class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript
+                        ============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Easing -->
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+
+</html>
