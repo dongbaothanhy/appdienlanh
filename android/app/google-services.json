@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "956939334916",
+    "project_id": "ulearn-a64f9",
+    "storage_bucket": "ulearn-a64f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956939334916:android:5d05f8bdf3ea4f3d324c51",
+        "android_client_info": {
+          "package_name": "com.dbestech.riverpod.ulearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956939334916-4s0gaht9t29b6d5u39d50nj0ou41kcoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHfbwueQs11sLPGAl_vEK2rPTmkRQskDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956939334916-4s0gaht9t29b6d5u39d50nj0ou41kcoa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "956939334916-dg2gl1ou8nnlhcu2peds9e2eqvh6erm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dbestech.riverpod.ulearning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956939334916:android:fbf2612f59358480324c51",
+        "android_client_info": {
+          "package_name": "com.news.wrteam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956939334916-4s0gaht9t29b6d5u39d50nj0ou41kcoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHfbwueQs11sLPGAl_vEK2rPTmkRQskDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956939334916-4s0gaht9t29b6d5u39d50nj0ou41kcoa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "956939334916-dg2gl1ou8nnlhcu2peds9e2eqvh6erm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dbestech.riverpod.ulearning"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

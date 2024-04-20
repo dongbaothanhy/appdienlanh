@@ -1,6 +1,6 @@
 //Please add your admin panel url here and make sure you do not add '/' at the end of the url
 
-const String baseUrl = "enter_your_url_here";
+const String baseUrl = "https://dienlanh.trathainguyenviluyen.com";
 const String databaseUrl = "$baseUrl/api/";
 
 //Please add here your default country code
